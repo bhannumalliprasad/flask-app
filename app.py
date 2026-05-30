@@ -3,8 +3,9 @@ from routes.authRoutes import auth_bp
 from routes.productRoutes import product_bp
 from routes.paymentRoutes import payment_bp
 from routes.orderRoutes import order_bp
+from apiflask import APIFlask
 
-app = Flask(__name__)
+app = APIFlask(__name__)
 
 app.register_blueprint(auth_bp)
 app.register_blueprint(product_bp)
